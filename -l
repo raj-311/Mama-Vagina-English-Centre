@@ -1,0 +1,37 @@
+[33mcommit 15df62c4624cd1f5082fedba1a686d17a7068a89[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Merge: a6ffc40 01c55db
+Author: Your GitHub Username <your-email@example.com>
+Date:   Wed Sep 25 23:42:32 2024 +0600
+
+    Complete merge
+
+[33mcommit a6ffc40ee61a0d2e5ddd8d0b82143172e03b3531[m
+Merge: 71afb78 258dd7e
+Author: Your GitHub Username <your-email@example.com>
+Date:   Wed Sep 25 23:37:03 2024 +0600
+
+    Merged remote changes
+
+[33mcommit 71afb7824b9fd0ea29ae0dc2ca7a54f3bf7cdc4b[m
+Author: Your GitHub Username <your-email@example.com>
+Date:   Wed Sep 25 23:23:56 2024 +0600
+
+    Initial commit
+
+[33mcommit 01c55db608aa69cdb81148c4d4e1b5730924481a[m
+Author: Your GitHub Username <your-email@example.com>
+Date:   Wed Sep 25 21:56:49 2024 +0600
+
+    Initial upload
+
+[33mcommit 258dd7e6df4cb9a1b9981b59750a8bce9d2ef338[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: raj-311 <147081691+raj-311@users.noreply.github.com>
+Date:   Wed Sep 25 21:25:00 2024 +0600
+
+    Initial commit
+
+[33mcommit da762b2e91023033b5421822e6e63071572de713[m
+Author: Your GitHub Username <your-email@example.com>
+Date:   Wed Sep 25 16:27:53 2024 +0600
+
+    Initial commit
