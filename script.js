@@ -103,7 +103,7 @@ longVowels.forEach((vowel) => {
     vowel.addEventListener("click", function () {
         const vowelName = vowel.textContent.trim();  // vowel এর নাম নেওয়া
 
-        const longSoundPath = `long/${vowelName}-long.mp3`;   // long sound ফাইলের পথ
+        const longSoundPath = `${vowelName}-long.mp3`;   // long sound ফাইলের পথ
         const audio = new Audio(longSoundPath);  // নতুন অডিও অবজেক্ট তৈরি করা
         
         audio.play().catch((error) => {
