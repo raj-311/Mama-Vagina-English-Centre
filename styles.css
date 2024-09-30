@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.book {
+    position: relative;
+    width: 90vw;
+    height: 120vw;
+    max-height: 95vh;
+    max-width: calc(95vh * 3 / 4);
+    perspective: 1500px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    transform-origin: left;
+}
+
+.cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.page h3 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-top: 10px;
+}
+
+.letters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 7px;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.letter {
+    font-size: 1.5rem;
+    background-color: #87CEFA;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.letter:hover {
+    background-color: #1E90FF;
+}
+
+#cover {
+    z-index: 3;
+}
+
+#page1 {
+    z-index: 2;
+    transform: rotateY(180deg);
+}
+
+#page2 {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+#page3 {
+    z-index: 0;
+    transform: rotateY(180deg);
+}
+
+.flipped #cover {
+    transform: rotateY(-180deg);
+}
+
+.flipped #page1 {
+    transform: rotateY(0deg);
+}
+
+.flipped-2 #cover {
+    transform: rotateY(-180deg);
+}
+
+.flipped-2 #page1 {
+    transform: rotateY(-180deg);
+}
+
+.flipped-2 #page2 {
+    transform: rotateY(0deg);
+}
+
+.flipped-3 #cover {
+    transform: rotateY(-180deg);
+}
+
+.flipped-3 #page1 {
+    transform: rotateY(-180deg);
+}
+
+.flipped-3 #page2 {
+    transform: rotateY(-180deg);
+}
+
+.flipped-3 #page3 {
+    transform: rotateY(0deg);
+}
+
+.sound-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.sound-column {
+    text-align: center;
+}
+
+.sound-column h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vowel {
+    font-size: 1.5rem;
+    background-color: #87CEFA;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.vowel:hover {
+    background-color: #1E90FF;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 5px;
+    }
+
+    .letter, .vowel {
+        font-size: 1.2rem;
+        padding: 8px;
+    }
+}
